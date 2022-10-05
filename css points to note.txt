@@ -1,0 +1,54 @@
+<div id="accordionGroup">
+	<button id="accordion1id">
+	Personal Info
+	</button>
+	<div id="sect1">
+		<fieldset>
+			<label>Name</label><input id="cufc1">
+			<label>Email</label><input id="cufc2">
+			<label>Phone</label><input id="cufc3">
+			<label>Extension</label><input id="cufc4">
+			<label>Country<</label><input id="cufc5">
+			<label>City/Province</label><input id="cufc6">
+		</fieldset>
+	</div>
+
+	<button id="accordion2id">
+	Billing Address
+	</button>
+	<div id="sect2">
+		<fieldset>
+			<label>Address 1</label><input id="b-add1">
+			<label>Address 2</label><input id="b-add2">
+			<label>City</label><input id="b-city">
+			<label>State</label><input id="b-state">
+			<label>Zip Code:</label><input id="b-zip">
+		</fieldset>
+	</div>
+
+	<button id="accordion3id">
+	Shipping Address
+	</button>
+	<div id="sect3">
+		<fieldset>
+			<label>Address 1</label><input id="m-add1">
+			<label>Address 2</label><input id="m-add2">
+			<label>City</label><input id="m-city">
+			<label>State</label><input id="m-state">
+			<label>Zip Code:</label><input id="m-zip">
+		</fieldset>
+	</div>
+
+
+
+
+CSS:
+
+> = gt selector, to select the element with a specific parent
+* = CSS universal selectors, to select any and all types of elements
+
+parent * {
+	property: value;
+} //select all the children of that parent
+
++ =  The selector matches if E1 and E2 share the same parent in the document tree and E1 immediately precedes E2
