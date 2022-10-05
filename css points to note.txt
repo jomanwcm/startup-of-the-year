@@ -1,5 +1,5 @@
-<div id="accordionGroup">
-	<button id="accordion1id">
+<div id="accordionGroup" class="accordion">
+	<button id="accordion1id" class="accordion-trigger">
 	Personal Info
 	</button>
 	<div id="sect1">
@@ -46,9 +46,44 @@ CSS:
 
 > = gt selector, to select the element with a specific parent
 * = CSS universal selectors, to select any and all types of elements
+: = CSS pseudo class to specify a certain state, e.g. :active, :checked, :nth-child(), :first, :hover
 
 parent * {
 	property: value;
 } //select all the children of that parent
 
 + =  The selector matches if E1 and E2 share the same parent in the document tree and E1 immediately precedes E2
+Example: The following rule states that when a P element immediately follows a MATH element, it should not be indented:
+math + p { text-indent: 0 } 
+
+" " space 
+.container div
+Select any div element that is a child of any element with a class name of “container”
+
+
+.accordion > *:first-child{...}
+<div class="accordion">
+	<h3>select this element</h3>
+	<h1>will not select this element</h1>
+</div>
+
+.accordion > *:first-child .accordion-trigger{...}
+<div class="accordion">
+	<h3>
+		<button class="accordion-trigger">select this element</button>
+		<button class="a">will not select element</button>
+	</h3>
+	<h3>	<button class="accordion-trigger">will not select this element</button>
+	</h3>
+</div
+
+
+.accordion > * + * {...}
+<div class="accordion>
+	<h3>will not select this eleemnt</h3>
+	<h3>select this element</h3>
+	<h3>select this element</h3>
+	<h3>select this element</h3>
+	<h3>select this element</h3>
+</div>
+//applies to all child elements under accordion except the first element
