@@ -1,6 +1,8 @@
 //1. Accordion js 
 'use strict';
 
+
+
 class Accordion {
   constructor(domNode) {
     this.rootEl = domNode;
@@ -49,6 +51,8 @@ class Accordion {
 
 // init accordions
 const accordions = document.querySelectorAll('.accordion h3');
+alert(accordions);
 accordions.forEach((accordionEl) => {
+  
   new Accordion(accordionEl);
 });
