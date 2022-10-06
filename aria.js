@@ -49,7 +49,7 @@ class Accordion {
 }
 
 
-
+document.addEventListener('DOMContentLoaded', function(){
 
 // init accordions
 const accordions = document.querySelectorAll('.accordion h3');
@@ -57,4 +57,8 @@ const accordions = document.querySelectorAll('.accordion h3');
 accordions.forEach((accordionEl) => {
   new Accordion(accordionEl);
 });
+
+}, false)
+
+
 
