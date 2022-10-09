@@ -2,19 +2,19 @@
 
 'use strict';
 
-var aria = aria || {};
+var aria = aria || {};  //define an object type "aria"
 
-aria.Utils = aria.Utils || {};
+aria.Utils = aria.Utils || {};    //define an object type aria.Utils
 
-aria.Utils.disableCtrl = function (ctrl) {
+aria.Utils.disableCtrl = function (ctrl) {        //define a function disableCtrl to set Control attribute 'aria-disabled' to be 'true'
   ctrl.setAttribute('aria-disabled', 'true');
 };
 
-aria.Utils.enableCtrl = function (ctrl) {
+aria.Utils.enableCtrl = function (ctrl) {         //define a function enableCtrl to remove the attribute 'aria-disabled' from a Control
   ctrl.removeAttribute('aria-disabled');
 };
 
-aria.Utils.setLoading = function (saveBtn, saveStatusView) {
+aria.Utils.setLoading = function (saveBtn, saveStatusView) {    //define a function setLoading, to add a class named 'loading', used in the save button when pressed
   saveBtn.classList.add('loading');
   this.disableCtrl(saveBtn);
 
