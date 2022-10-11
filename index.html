@@ -14,6 +14,8 @@
     <link href="3_alertdialog.css" rel="stylesheet">
     <script src="3_alertdialog.js"></script>
 
+    <link href="4_breadcrumb.css" rel="stylesheet">
+
 
       </head>
   <body>
@@ -152,8 +154,7 @@
 <textarea class="notes" name="notes" id="notes" rows="7">This is an example text box, which unsurprisingly contains text. The user is given the option to save this text - which triggers a basic alert - or to discard the text - which triggers an alert dialog that prompts the user for confirmation.</textarea>
 
 <div class="visually-hidden" id="notes_save_status" role="alert"></div>
-
-<button type="button" id="notes_save">
+<button type="button" id="notes_save" aria-labelledby="save_text">
   Save
   <svg class="icon spinner" viewBox="0 0 32 32" aria-hidden="true">
     <path d="M16 32c-4.274 0-8.292-1.664-11.314-4.686s-4.686-7.040-4.686-11.314c0-3.026 0.849-5.973 2.456-8.522 1.563-2.478 3.771-4.48 6.386-5.791l1.344 2.682c-2.126 1.065-3.922 2.693-5.192 4.708-1.305 2.069-1.994 4.462-1.994 6.922 0 7.168 5.832 13 13 13s13-5.832 13-13c0-2.459-0.69-4.853-1.994-6.922-1.271-2.015-3.066-3.643-5.192-4.708l1.344-2.682c2.615 1.31 4.824 3.313 6.386 5.791 1.607 2.549 2.456 5.495 2.456 8.522 0 4.274-1.664 8.292-4.686 11.314s-7.040 4.686-11.314 4.686z"></path>
@@ -179,11 +180,27 @@
 </div>
 
 
-
-
-
-
 <h1>4. Breadcrumb</h1>
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ol>
+    <li>
+      <a href="../../">WAI-ARIA Authoring Practices</a>
+    </li>
+    <li>
+      <a href="/WAI/ARIA/apg/patterns/">Design Patterns</a>
+    </li>
+    <li>
+      <a href="/WAI/ARIA/apg/patterns/breadcrumb/">Breadcrumb Pattern</a>
+    </li>
+    <li>
+      <a href="index.html" aria-current="page">Breadcrumb Example</a>
+    </li>
+  </ol>
+</nav>
+
+
+
+
 
 <h1>5. Button</h1>
 
@@ -236,6 +253,7 @@
 <h1>29. Treegrid</h1>
 
 <h1>30. Window Splitter</h1>
+
 
 
   </body>
